@@ -1,0 +1,27 @@
+<Project>
+
+  <PropertyGroup>
+    <!-- MinVer for automatic git-based versioning -->
+    <MinVerTagPrefix>v</MinVerTagPrefix>
+    <MinVerDefaultPreReleaseIdentifiers>alpha</MinVerDefaultPreReleaseIdentifiers>
+
+    <!-- Common assembly metadata -->
+    <Authors>Sasha Kotlyar, SlimProtoNet Contributors</Authors>
+    <Product>SlimProtoNet</Product>
+    <Copyright>Copyright © 2026 Sasha Kotlyar, SlimProtoNet Contributors</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/arktronic/slimprotonet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/arktronic/slimprotonet.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- MinVer only needed for packable projects -->
+    <PackageReference Include="MinVer" Version="6.0.0" Condition="'$(IsPackable)' != 'false'">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

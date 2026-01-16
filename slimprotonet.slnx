@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="SlimProtoNet.UnitTests/SlimProtoNet.UnitTests.csproj" />
+  <Project Path="SlimProtoNet/SlimProtoNet.csproj" />
+  <Project Path="squeeze-net-cli/squeeze-net-cli.csproj" Id="3aa0b3c4-8967-4694-a2fb-0495f3ff6d12" />
+</Solution>
